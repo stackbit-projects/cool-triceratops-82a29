@@ -5142,7 +5142,6 @@ document.addEventListener('alpine:init', () => {
           carts: b
       } = a.get();
   Alpine.store('shop', {
-      init() {myads()},
       items: {},
       user: {},
       activeVariant: 0,
