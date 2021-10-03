@@ -5204,7 +5204,7 @@ document.addEventListener('alpine:init', () => {
           })
       },
       galleries() {
-          const gallery = document.querySelectorAll('.gambar-produk img');
+          const gallery = document.querySelectorAll('.shop__content .selector img');
           
           if(gallery) {
               return gallery; 
