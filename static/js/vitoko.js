@@ -5081,6 +5081,7 @@ Expression: "${b}"
   }))
 }), document.addEventListener('alpine:init', () => {
   Alpine.data('rivebit', () => ({
+      menu: [],
       open: !1,
       searchApi: {},
       toggle() {
