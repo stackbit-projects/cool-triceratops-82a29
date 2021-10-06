@@ -5080,7 +5080,7 @@ Expression: "${b}"
       },
   }))
 }), document.addEventListener('alpine:init', () => {
-  Alpine.data('rivebit', () => ({
+  Alpine.data('kreasify', () => ({
       menu: [],
       open: !1,
       searchApi: {},
