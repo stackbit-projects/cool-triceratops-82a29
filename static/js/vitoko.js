@@ -5149,7 +5149,7 @@ document.addEventListener('alpine:init', () => {
       count: 1,
       carts: b,
       inCarts() {
-          const a = this.items.variants[this.activeVariant].id;
+          const a = this.items.sku + this.items.variants[this.activeVariant].id;
           let b = this.carts.find(b => b.sku == a);
           return !!b
       },
@@ -5157,12 +5157,12 @@ document.addEventListener('alpine:init', () => {
           return this.carts
       },
       addItem() {
-          const a = this.items.variants[this.activeVariant].id,
+          const a = this.items.sku + this.items.variants[this.activeVariant].id,
               b = this.carts.some(b => b.sku === a);
           if (b) {
               for (let b of this.carts) b.sku == a && b.qty++
           } else this.carts.push({
-              sku: this.items.variants[this.activeVariant].id,
+              sku: this.items.sku + this.items.variants[this.activeVariant].id,
               name: this.items.title,
               image: this.items.image,
               thumbnail: this.items.thumbnail,
